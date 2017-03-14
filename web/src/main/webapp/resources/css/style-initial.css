@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(141, 180, 255, 0.56);
+}
+
+.container {
+
+}
+
+.searchForm {
+    margin-bottom: 0;
+}
+
+.btn-default {
+    color: white;
+    background-color: #2a5285;
+}
+
+.navbar-default {
+    background-color: #2a5285;
+}
+
+.navbar-brand {
+    color: white !important;
+    padding-left: 200px;
+}
+
+.dropdown-toggle {
+    color: white !important;
+}
+
+.init1 {
+    background-color: rgb(175, 255, 91);
+    box-shadow: 1px 5px 3px rgba(32, 0, 255, 0.35);
+    height: 30px;
+    font-size: 20px;
+    color: #2a5285;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.init2 {
+    background-color: rgb(109, 208, 244);
+    box-shadow: 1px 5px 3px rgba(32, 0, 255, 0.35);
+    height: 30px;
+    font-size: 20px;
+    color: #2a5285;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.init1:hover {
+    cursor: pointer;
+    box-shadow: 1px 5px 1px rgba(13, 0, 79, 0.62);
+    background-color: rgba(42, 82, 133, 0.65);
+    color: white;
+}
+
+.init2:hover {
+    cursor: pointer;
+    box-shadow: 1px 5px 1px rgba(13, 0, 79, 0.62);
+    background-color: rgba(42, 82, 133, 0.65);
+    color: white;
+}
+
+p {
+    font-size: 20px;
+    color: #6b7c85;
+}
+
+img {
+    height: 300px;
+    width:400px;
+    margin-top: 40px;
+}

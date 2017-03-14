@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(141, 180, 255, 0.56);
+}
+
+.container {
+
+}
+
+.form-control {
+    border-radius: 10px;
+    margin-bottom: -15px;
+}
+
+p {
+    padding-top: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.searchForm {
+    margin-bottom: 0;
+}
+
+.btn-default {
+    color: white;
+    background-color: #2a5285;
+}
+
+.navbar-default {
+    background-color: #2a5285;
+}
+
+.navbar-brand {
+    color: white !important;
+    padding-left: 200px;
+}
+
+.dropdown-toggle {
+    color: white !important;
+}
+
+.row-button {
+    margin-top: 10px;
+}
+
+.btn_reg {
+    width: 90px;
+    margin-left: 90px;
+    border-radius: 10px;
+}
+
+.ahref {
+    margin-left: -10px;
+    margin-right: 15px;
+}

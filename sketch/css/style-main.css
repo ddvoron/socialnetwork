@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(152, 152, 152, 0.15);
+}
+
+.container {
+
+}
+
+.searchForm {
+    margin-bottom: 0;
+}
+
+.btn-default {
+    color: white;
+    background-color: #2a5285;
+}
+
+.navbar-default {
+    background-color: #2a5285;
+}
+
+.navbar-brand {
+    color: white !important;
+    padding-left: 200px;
+}
+
+.dropdown-toggle {
+    color: white !important;
+}
+
+.content {
+    margin-left: -40px;
+}
+
+.empty {
+
+}
+
+.menu {
+    margin-right: 20px;
+}
+
+.middle {
+    background-color: #24d2b5;
+    margin-right: 20px;
+}
+
+.profile {
+    background-color: #3962d2;
+}
+
+.menu-point {
+    margin-bottom: 5px;
+}
+
+.menu-point:hover {
+    cursor: pointer;
+    background-color: rgba(193, 195, 193, 0.15);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
