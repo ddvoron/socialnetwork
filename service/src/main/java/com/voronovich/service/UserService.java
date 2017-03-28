@@ -1,6 +1,5 @@
 package com.voronovich.service;
 
-import com.voronovich.exceptions.ServiceException;
 import com.voronovich.pojo.User;
 
 import java.io.Serializable;
@@ -13,14 +12,14 @@ public interface UserService {
      *
      * @param  user User
      */
-    void saveOrUpdate(User user) throws ServiceException;
+    void saveOrUpdate(User user);
 
     /**
      * Removes user
      *
      * @param user User
      */
-    void delete(User user) throws ServiceException;
+    void delete(User user);
 
     /**
      * Reads user
@@ -28,14 +27,14 @@ public interface UserService {
      * @param id - user id
      * @return User
      */
-    User get(Serializable id) throws ServiceException;
+    User get(Serializable id);
 
     /**
      * Returns the whole list of users
      *
      * @return List<User>
      */
-    List<User> getAllUsers() throws ServiceException;
+    List<User> getAllUsers();
 
     /**
      * Returns user by phone
@@ -43,7 +42,7 @@ public interface UserService {
      * @return List<User>
      * @throws ServiceException
      */
-    User getByPhone(String phone) throws ServiceException;
+    User getByPhone(String phone);
 
     /**
      * Returns user by email
@@ -51,7 +50,7 @@ public interface UserService {
      * @return List<User>
      * @throws ServiceException
      */
-    User getByEmail(String email) throws ServiceException;
+    User getByEmail(String email);
 
     /**
      * Returns user by phone and password
@@ -59,7 +58,7 @@ public interface UserService {
      * @return List<User>
      * @throws ServiceException
      */
-    User getByPhoneAndPassword(String phone, String password) throws ServiceException;
+    User getByPhoneAndPassword(String phone, String password);
 
     /**
      * Returns user by email and password
@@ -67,6 +66,6 @@ public interface UserService {
      * @return List<User>
      * @throws ServiceException
      */
-    User getByEmailAndPassword(String email, String password) throws ServiceException;
+    User getByEmailAndPassword(String email, String password);
 }
 

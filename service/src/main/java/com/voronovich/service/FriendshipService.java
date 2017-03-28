@@ -1,6 +1,5 @@
 package com.voronovich.service;
 
-import com.voronovich.exceptions.ServiceException;
 import com.voronovich.pojo.Friendship;
 
 import java.io.Serializable;
@@ -13,14 +12,14 @@ public interface FriendshipService {
      *
      * @param friendship Friendship
      */
-    void saveOrUpdate(Friendship friendship) throws ServiceException;
+    void saveOrUpdate(Friendship friendship);
 
     /**
      * Removes friendship
      *
      * @param friendship Friendship
      */
-    void delete(Friendship friendship) throws ServiceException;
+    void delete(Friendship friendship);
 
     /**
      * Reads friendship
@@ -28,12 +27,12 @@ public interface FriendshipService {
      * @param id - friendship id
      * @return Friendship
      */
-    Friendship get(Serializable id) throws ServiceException;
+    Friendship get(Serializable id);
 
     /**
      * Reads the whole list of friendships
      *
      * @return List<Friendship>
      */
-    List<Friendship> getAllFriendships() throws ServiceException;
+    List<Friendship> getAllFriendships();
 }

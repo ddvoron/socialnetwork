@@ -1,6 +1,5 @@
 package com.voronovich.service;
 
-import com.voronovich.exceptions.ServiceException;
 import com.voronovich.pojo.Message;
 
 import java.io.Serializable;
@@ -13,14 +12,14 @@ public interface MessageService {
      *
      * @param message Message
      */
-    void saveOrUpdate(Message message) throws ServiceException;
+    void saveOrUpdate(Message message);
 
     /**
      * Removes message
      *
      * @param message Message
      */
-    void delete(Message message) throws ServiceException;
+    void delete(Message message);
 
     /**
      * Reads message
@@ -28,12 +27,12 @@ public interface MessageService {
      * @param id - message id
      * @return Message
      */
-    Message get(Serializable id) throws ServiceException;
+    Message get(Serializable id);
 
     /**
      * Reads the whole list of messages
      *
      * @return List<Message>
      */
-    List<Message> getAllMessages() throws ServiceException;
+    List<Message> getAllMessages();
 }

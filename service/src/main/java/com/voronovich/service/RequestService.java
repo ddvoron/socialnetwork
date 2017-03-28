@@ -1,6 +1,5 @@
 package com.voronovich.service;
 
-import com.voronovich.exceptions.ServiceException;
 import com.voronovich.pojo.Request;
 
 import java.io.Serializable;
@@ -13,14 +12,14 @@ public interface RequestService {
      *
      * @param request Request
      */
-    void saveOrUpdate(Request request) throws ServiceException;
+    void saveOrUpdate(Request request);
 
     /**
      * Removes request
      *
      * @param request Request
      */
-    void delete(Request request) throws ServiceException;
+    void delete(Request request);
 
     /**
      * Reads request
@@ -28,12 +27,12 @@ public interface RequestService {
      * @param id - request id
      * @return Request
      */
-    Request get(Serializable id) throws ServiceException;
+    Request get(Serializable id);
 
     /**
      * Reads the whole list of requests
      *
      * @return List<Request>
      */
-    List<Request> getAllRequests() throws ServiceException;
+    List<Request> getAllRequests();
 }

@@ -8,12 +8,12 @@
     <div class="col-md-4 col-md-offset-4">
         <p class="text-center">Join us</p>
         <div class="col-md-8 col-md-offset-2">
-            <a href="SignUp.html">
+            <a href="<c:url value="/user/signUp"/>">
                 <div class="col-md-6 init1">
                     Sign Up
                 </div>
             </a>
-            <a href="SignIn.html">
+            <a href="<c:url value="/user/signIn"/>">
                 <div class="col-md-6 init2">
                     Sign In
                 </div>

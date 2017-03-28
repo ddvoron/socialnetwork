@@ -1,6 +1,5 @@
 package com.voronovich.service;
 
-import com.voronovich.exceptions.ServiceException;
 import com.voronovich.pojo.Chat;
 
 import java.io.Serializable;
@@ -13,14 +12,14 @@ public interface ChatService {
      *
      * @param chat Chat
      */
-    void saveOrUpdate(Chat chat) throws ServiceException;
+    void saveOrUpdate(Chat chat);
 
     /**
      * Removes chat
      *
      * @param chat Chat
      */
-    void delete(Chat chat) throws ServiceException;
+    void delete(Chat chat);
 
     /**
      * Reads chat
@@ -28,12 +27,12 @@ public interface ChatService {
      * @param id - chat id
      * @return Chat
      */
-    Chat get(Serializable id) throws ServiceException;
+    Chat get(Serializable id);
 
     /**
      * Reads the whole list of chats
      *
      * @return List<Chat>
      */
-    List<Chat> getAllChats() throws ServiceException;
+    List<Chat> getAllChats();
 }

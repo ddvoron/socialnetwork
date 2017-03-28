@@ -39,7 +39,7 @@ public class UserDaoImpl extends DaoImpl<User> implements UserDao {
     @Override
     public User getByPhone(String phone) throws DaoException {
         try{
-            Query query = getSession().getNamedQuery("getUserByPhone");
+            Query query = getSession().getNamedQuery("getUserByPhone").setParameter("phone", phone);
             User user = (User) query.uniqueResult();
             log.info("got user by phone :" + user);
             return user;
@@ -52,7 +52,7 @@ public class UserDaoImpl extends DaoImpl<User> implements UserDao {
     @Override
     public User getByEmail(String email) throws DaoException {
         try{
-            Query query = getSession().getNamedQuery("getUserByEmail");
+            Query query = getSession().getNamedQuery("getUserByEmail").setParameter("email", email);
             User user = (User) query.uniqueResult();
             log.info("got user by email :" + user);
             return user;
@@ -65,7 +65,8 @@ public class UserDaoImpl extends DaoImpl<User> implements UserDao {
     @Override
     public User getByPhoneAndPassword(String phone, String password) throws DaoException {
         try{
-            Query query = getSession().getNamedQuery("getUserByPhoneAndPassword");
+            Query query = getSession().getNamedQuery("getUserByPhoneAndPassword")
+                    .setParameter("phone", phone).setParameter("password", password);
             User user = (User) query.uniqueResult();
             log.info("got user by phone and password :" + user);
             return user;
@@ -78,7 +79,8 @@ public class UserDaoImpl extends DaoImpl<User> implements UserDao {
     @Override
     public User getByEmailAndPassword(String email, String password) throws DaoException {
         try{
-            Query query = getSession().getNamedQuery("getUserByEmailAndPassword");
+            Query query = getSession().getNamedQuery("getUserByEmailAndPassword")
+                    .setParameter("email", email).setParameter("password", password);
             User user = (User) query.uniqueResult();
             log.info("got user by email and password :" + user);
             return user;

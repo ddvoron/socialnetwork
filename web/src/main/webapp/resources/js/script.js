@@ -1,0 +1,3 @@
+function sendFormReg() {
+    $('#registrationForm').submit();
+}

@@ -7,14 +7,36 @@
     <definition name="default" template="/WEB-INF/views/layouts/default.jsp">
         <put-attribute name="head" value=""/>
         <put-attribute name="title" value=""/>
-        <put-attribute name="menu" value="/WEB-INF/views/common/menu.jsp"/>
+        <put-attribute name="menu" value=""/>
         <put-attribute name="content" value=""/>
     </definition>
 
     <definition name="init" extends="default">
         <put-attribute name="head" value="/WEB-INF/views/head/head-init.jsp"/>
         <put-attribute name="title" value="ChatterBox"/>
+        <put-attribute name="menu" value="/WEB-INF/views/common/menu-init.jsp"/>
         <put-attribute name="content" value="/WEB-INF/views/content/initial.jsp"/>
+    </definition>
+
+    <definition name="signUp" extends="default">
+        <put-attribute name="head" value="/WEB-INF/views/head/head-reg.jsp"/>
+        <put-attribute name="title" value="SignUp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/common/menu-init.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/content/sign-up.jsp"/>
+    </definition>
+
+    <definition name="signIn" extends="default">
+        <put-attribute name="head" value="/WEB-INF/views/head/head-log.jsp"/>
+        <put-attribute name="title" value="SignIn"/>
+        <put-attribute name="menu" value="/WEB-INF/views/common/menu-init.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/content/sign-in.jsp"/>
+    </definition>
+
+    <definition name="home" extends="default">
+        <put-attribute name="head" value="/WEB-INF/views/head/head-home.jsp"/>
+        <put-attribute name="title" value="SignIn"/>
+        <put-attribute name="menu" value="/WEB-INF/views/common/menu.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/content/home.jsp"/>
     </definition>
 
 </tiles-definitions>
