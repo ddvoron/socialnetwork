@@ -24,6 +24,13 @@
     </div>
     <div class="col-md-4 middle">
         3
+        <div class="col-md-12 messageForm">
+            <form role="form">
+                <input type="text" class="form-control" id="newMessage" placeholder="Type a message..."/>
+            </form>
+            <button class="btn_send" type="button"
+                    onclick="event.preventDefault();sendFormReg();">Send</button>
+        </div>
     </div>
     <div class="col-md-2 profile">
         4

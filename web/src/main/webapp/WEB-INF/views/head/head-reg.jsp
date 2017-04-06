@@ -7,8 +7,6 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" media="all" href="<c:url value="/resources/css/bootstrap.min.css"/>"/>
 <link rel="stylesheet" media="all" href="<c:url value="/resources/css/style-sign-up.css"/>"/>
-<script type="text/javascript" src="<c:url value="/resources/js/script.js"/>"></script>
+<script type="text/javascript" src="<c:url value="/resources/js/jquery-1.11.1.min.js"/>"></script>
 <script type="text/javascript" src="<c:url value="/resources/js/bootstrap.min.js"/>"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<c:url value="/resources/js/script.js"/>"></script>

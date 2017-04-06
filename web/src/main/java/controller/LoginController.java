@@ -19,7 +19,7 @@ import java.util.ResourceBundle;
 @RequestMapping("/user")
 public class LoginController {
 
-    private static final int TIME_SESSION = 900;
+    private static final int TIME_SESSION = 10000;
     private static final String STATIC_SALT = ResourceBundle.getBundle("staticValue").getString("staticValue");
     private static final String MESSAGE_CORRECTION = "Проверьте корректность ввода логина и пароля";
     private static final String MESSAGE_BLACKLISTED = "Ваш профиль заблокирован за несоблюдение правил сайта, " +

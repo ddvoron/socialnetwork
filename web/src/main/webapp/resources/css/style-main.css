@@ -43,12 +43,42 @@ body {
 }
 
 .middle {
-    background-color: #24d2b5;
+    background-color: #fff;
     margin-right: 20px;
+    height: 400px;
+    padding: 0;
+    border-radius: 5px;
+    border: 3px solid rgba(143, 221, 255, 0.58);
+}
+
+.messageForm {
+    margin-top: 276px;
+    height: 100px;
+    border-radius: 5px;
+    padding: 1px;
+    box-shadow: 0 0 0 rgba(143, 221, 255, 0.58);
+    background-color: rgba(143, 221, 255, 0.58);
+    border: 1px solid rgba(143, 221, 255, 0.58);
+}
+
+.btn_send {
+    height: 26px;
+    background-color: #5151ff;
+    color: white;
+    border-radius: 5px;
+    margin-left: 380px;
+}
+
+.btn_send:hover {
+    background-color: #4545cc;}
+
+#newMessage {
+    height: 70px;
 }
 
 .profile {
-    background-color: #3962d2;
+    background-color: #cfdcff;
+    height: 300px;
 }
 
 .menu-point {
